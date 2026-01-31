@@ -23,6 +23,6 @@ export function base64ToUtf8(b64) {
     return decoder.decode(bytes);
   } catch (e) {
     console.error('Error decoding base64 string:', e);
-    return '';
+    throw e;
   }
 }
